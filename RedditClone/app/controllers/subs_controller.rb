@@ -1,7 +1,8 @@
 class SubsController < ApplicationController
-
-  before_action :ensure_user_is_moderator, only: [:edit]
+  
   before_action :require_logged_in
+  before_action :ensure_user_is_moderator, only: [:edit]
+  
 
   def new
     @sub = Sub.new

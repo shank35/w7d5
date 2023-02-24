@@ -10,6 +10,24 @@
   </head>
 
   <body>
+<% if logged_in? %>
+  <ul>
+    <li><%= current_user.username %></li>
+    <li><a href="<%= new_sub_url %>">Create a sub!</a></li>
+    <li><a href="<%= subs_url %>">All Subs</a></li>
+    <li>
+      <form action="<%= session_url %>" method="POST">
+        <%= auth_token %>
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="Logout">
+      </form>
+    </li>
+  </ul>
+<% else %>
+  <p><a href="<%= new_session_url %>">Sign In!</a></p>
+<% end %>
+  <br>
+
     <% if flash[:errors] %>
     <ul>
       <% flash[:errors].each do |error|%>
