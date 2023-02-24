@@ -12,9 +12,9 @@
     <input type="hidden" name="_method" value="PATCH">
   <% end %>
   <label for="username">Username</label>
-  <input type="text" id="username" name="user[username]" value="<%= @user.username %>">
+  <input type="text" id="username" name="user[username]" value="<%= user.username %>">
   <label for="password">Password</label>
-  <input type="password" id="password" name="user[password]" value="<%= @user.password %>">
+  <input type="password" id="password" name="user[password]" value="<%= user.password %>">
   <input type="submit" value="<%= action_text %>">
 
 </form>

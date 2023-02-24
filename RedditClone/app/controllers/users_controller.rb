@@ -17,12 +17,12 @@ class UsersController < ApplicationController
   end
 
   def edit 
-    @user = User.find_by(params[:id])
+    @user = User.find(params[:id])
     render :edit
   end
 
   def update
-    @user = User.find_by(params[:id])
+    @user = User.find(params[:id])
     if @user.update(user_params)
       redirect_to subs_url
     else
@@ -42,7 +42,7 @@ class UsersController < ApplicationController
   # end
 
   def destroy
-    @user = User.find_by(params[:id])
+    @user = User.find(params[:id])
     @user.destroy
     flash[:messages] = ["#{@user} destroyed!!!"]
     redirect_to new_session_url
