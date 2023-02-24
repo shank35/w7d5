@@ -1,0 +1,12 @@
+<% if action == :new %>
+<% action_text = "Sign Up" %>
+<% else  %>
+<% action_text = "Update" %>
+<% end %>
+
+
+
+<form action="<%= users_url %>" method="POST">
+  <% if action == :edit %>
+    <input type="hidden" name="_method" value="PATCH">
+</form>
