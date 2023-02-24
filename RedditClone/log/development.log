@@ -36,3 +36,144 @@ Migrating to CreateUsers (20230224153835)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6711173107426626090)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-02-24 12:06:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stevenpaalz/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stevenpaalz/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 532)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2836)
+
+
+Started GET "/new_user" for ::1 at 2023-02-24 12:06:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new_user"):
+  
+Started GET "/users/new" for ::1 at 2023-02-24 12:06:44 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1059)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 11.2ms | Allocations: 7397)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 0..2)):
+    1: <h1>New User!</h1>
+    2: 
+    3: <%= render "users/shared/credform", action=:new, user: @user %>
+  
+app/views/users/new.html.erb:3
+app/controllers/users_controller.rb:5:in `new'
+Started GET "/new_user" for ::1 at 2023-02-24 12:07:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/new_user"):
+  
+Started GET "/new_user" for ::1 at 2023-02-24 12:09:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/new_user"):
+  
+Started GET "/new_user" for ::1 at 2023-02-24 12:12:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new_user"):
+  
+Started GET "/new" for ::1 at 2023-02-24 12:12:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/new_users" for ::1 at 2023-02-24 12:12:34 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new_users"):
+  
+Started GET "/" for ::1 at 2023-02-24 12:12:37 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stevenpaalz/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stevenpaalz/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 284)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 1160)
+
+
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "steve"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "steve"], ["password_digest", "[FILTERED]"], ["session_token", "[FILTERED]"], ["created_at", "2023-02-24 17:14:53.128483"], ["updated_at", "2023-02-24 17:14:53.128483"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/1" for ::1 at 2023-02-24 12:15:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (1) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `show'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 6.2ms | Allocations: 4307)
+
+
+
+ActiveRecord::StatementInvalid - PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "users".* FROM "users" WHERE (1) LIMIT $1
+                                             ^:
+  app/controllers/users_controller.rb:35:in `show'
+
+Started POST "/__better_errors/80c6e4772716bbc2/variables" for ::1 at 2023-02-24 12:15:18 -0500
+Started GET "/users/1" for ::1 at 2023-02-24 12:15:38 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (1) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.5ms | Allocations: 2084)
+
+
+
+ActiveRecord::StatementInvalid - PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "users".* FROM "users" WHERE (1) LIMIT $1
+                                             ^:
+  app/controllers/users_controller.rb:35:in `show'
+
+Started POST "/__better_errors/544e401e929bc3ad/variables" for ::1 at 2023-02-24 12:15:38 -0500
+Started GET "/user/1" for ::1 at 2023-02-24 12:15:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user/1"):
+  
+Started GET "/user" for ::1 at 2023-02-24 12:16:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/users/1" for ::1 at 2023-02-24 12:16:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (1) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 2.2ms | Allocations: 2057)
+
+
+
+ActiveRecord::StatementInvalid - PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "users".* FROM "users" WHERE (1) LIMIT $1
+                                             ^:
+  app/controllers/users_controller.rb:35:in `show'
+
+Started POST "/__better_errors/c2f64a3ea48db675/variables" for ::1 at 2023-02-24 12:16:07 -0500
+Started POST "/__better_errors/c2f64a3ea48db675/eval" for ::1 at 2023-02-24 12:16:42 -0500
+Started POST "/__better_errors/c2f64a3ea48db675/eval" for ::1 at 2023-02-24 12:16:50 -0500
+Started POST "/__better_errors/c2f64a3ea48db675/eval" for ::1 at 2023-02-24 12:16:58 -0500
+Started GET "/users/1" for ::1 at 2023-02-24 12:17:11 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 6626)
+Completed 200 OK in 21ms (Views: 7.1ms | ActiveRecord: 7.8ms | Allocations: 15750)
+
+
+Started GET "/new_user" for ::1 at 2023-02-24 12:17:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new_user"):
+  
+Started GET "/user_new" for ::1 at 2023-02-24 12:17:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user_new"):
+  
