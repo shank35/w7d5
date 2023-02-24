@@ -177,3 +177,527 @@ Started GET "/user_new" for ::1 at 2023-02-24 12:17:32 -0500
   
 ActionController::RoutingError (No route matches [GET] "/user_new"):
   
+Started GET "/users/new" for ::1 at 2023-02-24 12:19:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1952)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 2062)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 5.8ms | Allocations: 9819)
+
+
+
+ArgumentError - wrong number of arguments (given 3, expected 0..2):
+  app/views/users/new.html.erb:3
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/58072e179392c852/variables" for ::1 at 2023-02-24 12:19:53 -0500
+Started GET "/" for ::1 at 2023-02-24 13:15:11 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stevenpaalz/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stevenpaalz/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 297)
+Completed 200 OK in 4ms (Views: 2.2ms | Allocations: 1045)
+
+
+Started GET "/users/new" for ::1 at 2023-02-24 13:15:18 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 918)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1007)
+Completed 500 Internal Server Error in 6ms (Allocations: 1715)
+
+
+
+ArgumentError - wrong number of arguments (given 3, expected 0..2):
+  app/views/users/new.html.erb:3
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/aaad953e03f4533d/variables" for ::1 at 2023-02-24 13:15:18 -0500
+Started GET "/users/new" for ::1 at 2023-02-24 13:16:14 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 917)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1005)
+Completed 500 Internal Server Error in 5ms (Allocations: 1705)
+
+
+
+ArgumentError - wrong number of arguments (given 3, expected 0..2):
+  app/views/users/new.html.erb:3
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/d62ac3152689c67d/variables" for ::1 at 2023-02-24 13:16:14 -0500
+Started GET "/users/new" for ::1 at 2023-02-24 13:16:16 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 805)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 886)
+Completed 500 Internal Server Error in 3ms (Allocations: 1148)
+
+
+
+ArgumentError - wrong number of arguments (given 3, expected 0..2):
+  app/views/users/new.html.erb:3
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/d23e87f0079bab1a/variables" for ::1 at 2023-02-24 13:16:16 -0500
+Started POST "/__better_errors/d23e87f0079bab1a/variables" for ::1 at 2023-02-24 13:16:25 -0500
+Started GET "/users/new" for ::1 at 2023-02-24 13:16:51 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 918)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1006)
+Completed 500 Internal Server Error in 6ms (Allocations: 1705)
+
+
+
+ArgumentError - wrong number of arguments (given 3, expected 0..2):
+  app/views/users/new.html.erb:3
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/5a97bc5f18faa478/variables" for ::1 at 2023-02-24 13:16:51 -0500
+Started GET "/users/new" for ::1 at 2023-02-24 13:17:59 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 917)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1005)
+Completed 500 Internal Server Error in 6ms (Allocations: 1705)
+
+
+
+ArgumentError - wrong number of arguments (given 3, expected 0..2):
+  app/views/users/new.html.erb:3
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/65119096bc537fa8/variables" for ::1 at 2023-02-24 13:17:59 -0500
+Started GET "/users/new" for ::1 at 2023-02-24 13:18:46 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1578)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1667)
+Completed 500 Internal Server Error in 7ms (Allocations: 2376)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>New User!</h1>
+<%= render "shared/credform", action=:new, @user: @user %>:
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/967b85c054d3f4ee/variables" for ::1 at 2023-02-24 13:18:46 -0500
+Started GET "/users/new" for ::1 at 2023-02-24 13:19:09 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1008)
+Completed 500 Internal Server Error in 6ms (Allocations: 1708)
+
+
+
+ArgumentError - wrong number of arguments (given 3, expected 0..2):
+  app/views/users/new.html.erb:3
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/01de52b5afd69dc4/variables" for ::1 at 2023-02-24 13:19:09 -0500
+Started GET "/users/new" for ::1 at 2023-02-24 13:19:20 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1861)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1949)
+Completed 500 Internal Server Error in 7ms (Allocations: 2651)
+
+
+
+ActionView::MissingTemplate - Missing partial shared/_credform with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/stevenpaalz/Documents/app_academy/w7d5/RedditClone/app/views"
+Did you mean?  users/shared/credform:
+  app/views/users/new.html.erb:3
+  app/controllers/users_controller.rb:5:in `new'
+
+Started POST "/__better_errors/532cc5f78497c4f6/variables" for ::1 at 2023-02-24 13:19:20 -0500
+Started GET "/users/new" for ::1 at 2023-02-24 13:19:32 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/shared/_credform.html.erb (Duration: 8.4ms | Allocations: 1010)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1264)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 4322)
+Completed 200 OK in 27ms (Views: 26.1ms | Allocations: 5072)
+
+
+Started GET "/users/new" for ::1 at 2023-02-24 13:33:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/shared/_credform.html.erb (Duration: 2.2ms | Allocations: 1031)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1569)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4656)
+Completed 200 OK in 22ms (Views: 7.7ms | ActiveRecord: 7.0ms | Allocations: 12481)
+
+
+Started POST "/users" for ::1 at 2023-02-24 13:33:55 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:25:in `generate_unique_session_token'
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Steve"], ["password_digest", "[FILTERED]"], ["session_token", "[FILTERED]"], ["created_at", "2023-02-24 18:33:55.806762"], ["updated_at", "2023-02-24 18:33:55.806762"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `generate_unique_session_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:42:in `reset_session_token!'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "Steve"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42:in `reset_session_token!'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "[FILTERED]"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42:in `reset_session_token!'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "[FILTERED]"], ["updated_at", "2023-02-24 18:33:55.812211"], ["id", 2]]
+  ↳ app/models/user.rb:42:in `reset_session_token!'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:42:in `reset_session_token!'
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 4.9ms | Allocations: 15946)
+
+
+
+NameError - undefined local variable or method `subs_url' for #<UsersController:0x00000000004880>
+      redirect_to subs_url
+                  ^^^^^^^^:
+  app/controllers/users_controller.rb:12:in `create'
+
+Started POST "/__better_errors/6f1d11d869df90ed/variables" for ::1 at 2023-02-24 13:33:55 -0500
+Started GET "/session/new" for ::1 at 2023-02-24 13:37:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1180)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 4283)
+Completed 200 OK in 21ms (Views: 7.7ms | ActiveRecord: 6.1ms | Allocations: 12101)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:37:06 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3401)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3495)
+Completed 500 Internal Server Error in 262ms (ActiveRecord: 1.3ms | Allocations: 7419)
+
+
+
+NoMethodError - undefined method `username' for nil:NilClass:
+  app/views/sessions/new.html.erb:6
+  app/controllers/sessions_controller.rb:16:in `create'
+
+Started POST "/__better_errors/e2399d483fbc5bcf/variables" for ::1 at 2023-02-24 13:37:06 -0500
+Started GET "/session/new" for ::1 at 2023-02-24 13:38:37 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 657)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1953)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2752)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:38:41 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1132)
+Completed 200 OK in 276ms (Views: 1.9ms | ActiveRecord: 5.6ms | Allocations: 5404)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:41:14 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1682)
+Completed 200 OK in 262ms (Views: 3.1ms | ActiveRecord: 0.6ms | Allocations: 3350)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:42:04 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1262)
+Completed 200 OK in 234ms (Views: 1.5ms | ActiveRecord: 5.2ms | Allocations: 5774)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:42:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1014)
+Completed 200 OK in 263ms (Views: 1.7ms | ActiveRecord: 0.6ms | Allocations: 2278)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:42:31 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1254)
+Completed 200 OK in 230ms (Views: 1.7ms | ActiveRecord: 2.5ms | Allocations: 5796)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:42:53 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1685)
+Completed 200 OK in 264ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 3454)
+
+
+Started GET "/session/new" for ::1 at 2023-02-24 13:42:57 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 458)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1429)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1652)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:43:00 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1011)
+Completed 200 OK in 262ms (Views: 1.8ms | ActiveRecord: 0.5ms | Allocations: 2235)
+
+
+Started GET "/session/new" for ::1 at 2023-02-24 13:44:10 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2471)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3145)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RedditClone</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application" %>
+  </head>
+  <body>
+  <ul>
+    <% if flash[:errors] %>
+    <li><%= flash[:errors] %></li>
+  <!--
+    <% if flash[:errors] %>
+      <%= flash[:errors].each do |error|%>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+    <% if flash[:messages] %>
+      <%= flash[:messages].each do |message|%>
+        <li><%= message %></li>
+      <% end %>
+    <% end %> -->
+  </ul> 
+    <%= yield %>
+  </body>
+</html>:
+  app/controllers/sessions_controller.rb:4:in `new'
+
+Started GET "/session/new" for ::1 at 2023-02-24 13:44:10 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 424)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2196)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2400)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RedditClone</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application" %>
+  </head>
+  <body>
+  <ul>
+    <% if flash[:errors] %>
+    <li><%= flash[:errors] %></li>
+  <!--
+    <% if flash[:errors] %>
+      <%= flash[:errors].each do |error|%>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+    <% if flash[:messages] %>
+      <%= flash[:messages].each do |message|%>
+        <li><%= message %></li>
+      <% end %>
+    <% end %> -->
+  </ul> 
+    <%= yield %>
+  </body>
+</html>:
+  app/controllers/sessions_controller.rb:4:in `new'
+
+Started POST "/__better_errors/279d006d49c41d1e/variables" for ::1 at 2023-02-24 13:44:10 -0500
+Started GET "/session/new" for ::1 at 2023-02-24 13:44:25 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2178)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 2892)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:44:28 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1027)
+Completed 200 OK in 270ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 2260)
+
+
+Started GET "/session/new" for ::1 at 2023-02-24 13:46:24 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 657)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2204)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2897)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:46:28 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1020)
+Completed 200 OK in 227ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 2246)
+
+
+Started GET "/session/new" for ::1 at 2023-02-24 13:46:44 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 633)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2177)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2869)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:46:48 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1020)
+Completed 200 OK in 228ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 2248)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:47:28 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 228)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1760)
+Completed 200 OK in 263ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 3366)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:48:00 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1765)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.4ms | Allocations: 3496)
+
+
+Started GET "/session/new" for ::1 at 2023-02-24 13:48:04 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 452)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1426)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1648)
+
+
+Started POST "/session" for ::1 at 2023-02-24 13:48:08 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Steve", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Steve"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `find_by_credentials'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1017)
+Completed 200 OK in 264ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 2219)
+
+
